@@ -1504,7 +1504,7 @@ diff --git a/third_party/crashpad/crashpad/util/posix/signals_test.cc b/third_pa
 index d91e3cc6..b1ffc7b1 100644
 --- a/third_party/crashpad/crashpad/util/posix/signals_test.cc
 +++ b/third_party/crashpad/crashpad/util/posix/signals_test.cc
-@@ -46,12 +46,12 @@ bool CanCauseSignal(int sig) {
+@@ -46,9 +46,9 @@ bool CanCauseSignal(int sig) {
    return sig == SIGABRT ||
           sig == SIGALRM ||
           sig == SIGBUS ||
