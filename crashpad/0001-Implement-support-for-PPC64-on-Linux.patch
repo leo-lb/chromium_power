@@ -1516,8 +1516,6 @@ index d91e3cc6..b1ffc7b1 100644
  #if defined(ARCH_CPU_X86_FAMILY) || defined(ARCH_CPU_ARMEL)
           sig == SIGILL ||
  #endif  // defined(ARCH_CPU_X86_FAMILY) || defined(ARCH_CPU_ARMEL)
-          sig == SIGPIPE ||
-          sig == SIGSEGV ||
 @@ -117,9 +117,11 @@ void CauseSignal(int sig) {
        break;
      }
